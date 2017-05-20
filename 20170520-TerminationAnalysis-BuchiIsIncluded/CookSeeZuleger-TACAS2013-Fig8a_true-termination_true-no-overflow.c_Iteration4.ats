@@ -1,0 +1,34 @@
+// Testfile dumped by Ultimate at 2017/05/20 16:35:24
+//
+// 
+
+FiniteAutomaton inclusionLHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 },
+	states = {},
+	initialStates = {},
+	finalStates = {},
+	transitions = {
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/20 16:35:24
+//
+// RefinementSetting [mInterpolantAutomaton=ScroogeNondeterminism, mBouncerStem=true, mBouncerLoop=false, mScroogeNondeterminismStem=true, mScroogeNondeterminismLoop=false, mCannibalizeLoop=false]
+
+FiniteAutomaton inclusionRHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 },
+	states = {s0 s1 s2 },
+	initialStates = {s2 },
+	finalStates = {s1 },
+	transitions = {
+		(s0 a7 s0)
+		(s0 a9 s1)
+		(s1 a3 s0)
+		(s1 a7 s0)
+		(s2 a0 s2)
+		(s2 a3 s1)
+		(s2 a3 s2)
+		(s2 a7 s2)
+		(s2 a8 s2)
+		(s2 a9 s2)
+	}
+);

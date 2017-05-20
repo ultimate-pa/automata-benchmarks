@@ -1,0 +1,99 @@
+// Testfile dumped by Ultimate at 2017/05/20 16:35:04
+//
+// 
+
+FiniteAutomaton inclusionLHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 s35 s36 s37 s38 s39 s40 s41 },
+	initialStates = {s8 },
+	finalStates = {s0 s2 s8 s9 s10 s13 s16 },
+	transitions = {
+		(s0 a2 s1)
+		(s0 a2 s2)
+		(s1 a6 s19)
+		(s2 a6 s5)
+		(s3 a2 s4)
+		(s4 a6 s11)
+		(s5 a10 s14)
+		(s5 a11 s12)
+		(s6 a6 s7)
+		(s7 a10 s29)
+		(s8 a0 s0)
+		(s9 a10 s10)
+		(s10 a1 s13)
+		(s11 a11 s12)
+		(s12 a1 s3)
+		(s12 a3 s41)
+		(s13 a2 s16)
+		(s14 a3 s15)
+		(s15 a2 s6)
+		(s15 a2 s24)
+		(s16 a6 s9)
+		(s17 a2 s1)
+		(s17 a2 s2)
+		(s18 a1 s17)
+		(s19 a10 s18)
+		(s20 a10 s10)
+		(s20 a10 s21)
+		(s21 a1 s35)
+		(s22 a6 s20)
+		(s23 a2 s22)
+		(s23 a2 s24)
+		(s24 a6 s36)
+		(s25 a1 s26)
+		(s25 a3 s23)
+		(s26 a2 s28)
+		(s27 a11 s25)
+		(s28 a6 s27)
+		(s29 a1 s26)
+		(s30 a10 s31)
+		(s31 a1 s37)
+		(s32 a10 s33)
+		(s32 a11 s25)
+		(s33 a1 s35)
+		(s33 a3 s15)
+		(s34 a6 s32)
+		(s35 a2 s34)
+		(s36 a10 s14)
+		(s37 a2 s38)
+		(s37 a2 s39)
+		(s38 a6 s30)
+		(s39 a6 s40)
+		(s40 a10 s14)
+		(s40 a11 s25)
+		(s41 a2 s38)
+		(s41 a2 s24)
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/20 16:35:04
+//
+// RefinementSetting [mInterpolantAutomaton=Deterministic, mBouncerStem=true, mBouncerLoop=false, mScroogeNondeterminismStem=false, mScroogeNondeterminismLoop=false, mCannibalizeLoop=false]
+
+FiniteAutomaton inclusionRHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 },
+	initialStates = {s4 },
+	finalStates = {s7 },
+	transitions = {
+		(s0 a2 s0)
+		(s0 a6 s7)
+		(s1 a1 s2)
+		(s1 a3 s6)
+		(s2 a2 s2)
+		(s2 a6 s2)
+		(s2 a10 s3)
+		(s2 a11 s5)
+		(s3 a1 s2)
+		(s3 a3 s0)
+		(s4 a0 s4)
+		(s4 a2 s7)
+		(s5 a1 s2)
+		(s5 a3 s0)
+		(s6 a2 s6)
+		(s6 a6 s6)
+		(s6 a10 s1)
+		(s6 a11 s1)
+		(s7 a6 s6)
+		(s7 a10 s1)
+	}
+);
