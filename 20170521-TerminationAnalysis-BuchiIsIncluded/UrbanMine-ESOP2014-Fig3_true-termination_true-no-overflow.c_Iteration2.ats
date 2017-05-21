@@ -1,0 +1,100 @@
+// Testfile dumped by Ultimate at 2017/05/21 20:47:59
+//
+// 
+
+FiniteAutomaton inclusionLHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 s35 s36 s37 },
+	initialStates = {s11 },
+	finalStates = {s0 s1 s4 s5 s9 s10 s11 s12 s13 s20 s23 s24 s27 s28 s29 s30 s31 s32 s33 s34 s35 s36 s37 },
+	transitions = {
+		(s0 a5 s1)
+		(s1 a9 s13)
+		(s1 a6 s4)
+		(s2 a5 s3)
+		(s3 a6 s6)
+		(s4 a7 s5)
+		(s4 a8 s5)
+		(s5 a3 s0)
+		(s6 a7 s7)
+		(s6 a8 s8)
+		(s7 a3 s2)
+		(s7 a3 s20)
+		(s8 a3 s2)
+		(s9 a6 s10)
+		(s10 a8 s29)
+		(s11 a0 s12)
+		(s12 a3 s2)
+		(s12 a3 s20)
+		(s13 a10 s5)
+		(s13 a11 s5)
+		(s14 a10 s15)
+		(s15 a3 s19)
+		(s16 a9 s14)
+		(s16 a6 s17)
+		(s17 a8 s22)
+		(s18 a5 s16)
+		(s19 a5 s25)
+		(s20 a5 s27)
+		(s21 a7 s22)
+		(s21 a8 s15)
+		(s22 a3 s18)
+		(s23 a10 s24)
+		(s23 a10 s15)
+		(s23 a11 s5)
+		(s24 a3 s37)
+		(s25 a9 s26)
+		(s25 a6 s21)
+		(s26 a10 s24)
+		(s26 a10 s15)
+		(s26 a11 s5)
+		(s27 a9 s23)
+		(s27 a6 s10)
+		(s28 a5 s9)
+		(s29 a3 s28)
+		(s30 a10 s24)
+		(s30 a11 s5)
+		(s31 a9 s30)
+		(s31 a6 s32)
+		(s32 a7 s5)
+		(s32 a8 s34)
+		(s33 a5 s31)
+		(s34 a3 s33)
+		(s35 a7 s34)
+		(s35 a8 s24)
+		(s36 a6 s35)
+		(s37 a5 s36)
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/21 20:47:59
+//
+// RefinementSetting [mInterpolantAutomaton=Deterministic, mBouncerStem=true, mBouncerLoop=false, mScroogeNondeterminismStem=false, mScroogeNondeterminismLoop=false, mCannibalizeLoop=false]
+
+FiniteAutomaton inclusionRHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 },
+	states = {s0 s1 s2 s3 },
+	initialStates = {s0 },
+	finalStates = {s2 },
+	transitions = {
+		(s0 a0 s0)
+		(s0 a7 s0)
+		(s0 a8 s0)
+		(s0 a3 s0)
+		(s0 a9 s2)
+		(s0 a5 s0)
+		(s0 a6 s0)
+		(s1 a8 s1)
+		(s1 a3 s1)
+		(s1 a9 s1)
+		(s1 a10 s3)
+		(s1 a5 s1)
+		(s1 a6 s1)
+		(s2 a10 s3)
+		(s3 a7 s1)
+		(s3 a8 s3)
+		(s3 a3 s3)
+		(s3 a9 s2)
+		(s3 a5 s3)
+		(s3 a6 s3)
+	}
+);

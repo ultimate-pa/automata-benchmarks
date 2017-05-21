@@ -1,0 +1,96 @@
+// Testfile dumped by Ultimate at 2017/05/21 19:40:01
+//
+// 
+
+FiniteAutomaton inclusionLHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 a33 a34 a35 a36 a37 a38 a39 a40 a41 a42 a43 a44 a45 a46 a47 a48 a49 a50 a51 a52 a53 a54 a55 a56 a57 a58 a59 a60 a61 a62 a63 a64 a65 a66 a67 a68 a69 a70 a71 a72 a73 a74 a75 a76 a77 a78 a79 a80 a81 a82 a83 a84 a85 a86 a87 a88 a89 a90 a91 a92 a93 a94 a95 a96 a97 },
+	states = {},
+	initialStates = {},
+	finalStates = {},
+	transitions = {
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/21 19:40:01
+//
+// RefinementSetting [mInterpolantAutomaton=Deterministic, mBouncerStem=true, mBouncerLoop=false, mScroogeNondeterminismStem=false, mScroogeNondeterminismLoop=false, mCannibalizeLoop=false]
+
+FiniteAutomaton inclusionRHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 a33 a34 a35 a36 a37 a38 a39 a40 a41 a42 a43 a44 a45 a46 a47 a48 a49 a50 a51 a52 a53 a54 a55 a56 a57 a58 a59 a60 a61 a62 a63 a64 a65 a66 a67 a68 a69 a70 a71 a72 a73 a74 a75 a76 a77 a78 a79 a80 a81 a82 a83 a84 a85 a86 a87 a88 a89 a90 a91 a92 a93 a94 a95 a96 a97 },
+	states = {s0 s1 s2 s3 },
+	initialStates = {s0 },
+	finalStates = {s2 },
+	transitions = {
+		(s0 a0 s0)
+		(s0 a13 s0)
+		(s0 a2 s0)
+		(s0 a14 s0)
+		(s0 a36 s0)
+		(s0 a4 s0)
+		(s0 a37 s2)
+		(s0 a15 s0)
+		(s0 a5 s0)
+		(s0 a16 s0)
+		(s0 a6 s0)
+		(s0 a17 s0)
+		(s0 a7 s0)
+		(s0 a18 s0)
+		(s0 a8 s0)
+		(s0 a19 s0)
+		(s0 a9 s0)
+		(s0 a10 s0)
+		(s0 a11 s0)
+		(s0 a12 s0)
+		(s1 a40 s3)
+		(s2 a38 s1)
+		(s3 a47 s3)
+		(s3 a48 s3)
+		(s3 a49 s3)
+		(s3 a50 s3)
+		(s3 a51 s3)
+		(s3 a52 s3)
+		(s3 a53 s3)
+		(s3 a54 s3)
+		(s3 a55 s3)
+		(s3 a56 s3)
+		(s3 a57 s3)
+		(s3 a58 s3)
+		(s3 a59 s3)
+		(s3 a60 s3)
+		(s3 a61 s3)
+		(s3 a62 s3)
+		(s3 a63 s3)
+		(s3 a64 s3)
+		(s3 a65 s3)
+		(s3 a66 s3)
+		(s3 a67 s3)
+		(s3 a68 s3)
+		(s3 a69 s3)
+		(s3 a70 s3)
+		(s3 a71 s3)
+		(s3 a72 s3)
+		(s3 a73 s3)
+		(s3 a74 s3)
+		(s3 a75 s3)
+		(s3 a76 s3)
+		(s3 a77 s3)
+		(s3 a78 s3)
+		(s3 a79 s3)
+		(s3 a80 s3)
+		(s3 a81 s3)
+		(s3 a82 s3)
+		(s3 a83 s3)
+		(s3 a84 s3)
+		(s3 a85 s3)
+		(s3 a86 s3)
+		(s3 a90 s3)
+		(s3 a41 s3)
+		(s3 a91 s3)
+		(s3 a42 s3)
+		(s3 a43 s3)
+		(s3 a94 s3)
+		(s3 a44 s3)
+		(s3 a95 s2)
+		(s3 a45 s3)
+		(s3 a46 s3)
+	}
+);

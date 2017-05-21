@@ -1,0 +1,118 @@
+// Testfile dumped by Ultimate at 2017/05/21 21:02:43
+//
+// 
+
+FiniteAutomaton inclusionLHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 a33 a34 a35 a36 a37 a38 a39 a40 a41 a42 a43 a44 a45 a46 a47 a48 a49 a50 a51 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 s35 s36 s37 s38 s39 },
+	initialStates = {s20 },
+	finalStates = {s2 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 s35 s36 s37 s38 s39 },
+	transitions = {
+		(s0 a32 s1)
+		(s1 a27 s4)
+		(s2 a18 s26)
+		(s3 a30 s0)
+		(s3 a30 s38)
+		(s4 a28 s5)
+		(s5 a29 s3)
+		(s6 a11 s7)
+		(s7 a12 s27)
+		(s7 a15 s17)
+		(s8 a40 s36)
+		(s9 a38 s26)
+		(s9 a26 s10)
+		(s10 a27 s4)
+		(s11 a20 s12)
+		(s12 a21 s13)
+		(s13 a22 s9)
+		(s13 a23 s14)
+		(s14 a24 s15)
+		(s15 a25 s9)
+		(s16 a1 s34)
+		(s17 a19 s11)
+		(s18 a17 s2)
+		(s19 a19 s11)
+		(s19 a16 s18)
+		(s20 a0 s16)
+		(s21 a42 s22)
+		(s22 a43 s37)
+		(s23 a5 s24)
+		(s24 a6 s29)
+		(s25 a37 s26)
+		(s26 a39 s8)
+		(s27 a13 s28)
+		(s28 a14 s19)
+		(s29 a7 s35)
+		(s30 a9 s31)
+		(s31 a10 s6)
+		(s32 a35 s33)
+		(s33 a36 s25)
+		(s34 a3 s23)
+		(s35 a8 s30)
+		(s36 a41 s21)
+		(s37 a45 s8)
+		(s38 a31 s39)
+		(s39 a34 s32)
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/21 21:02:43
+//
+// RefinementSetting [mInterpolantAutomaton=Deterministic, mBouncerStem=true, mBouncerLoop=false, mScroogeNondeterminismStem=false, mScroogeNondeterminismLoop=false, mCannibalizeLoop=false]
+
+FiniteAutomaton inclusionRHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 a33 a34 a35 a36 a37 a38 a39 a40 a41 a42 a43 a44 a45 a46 a47 a48 a49 a50 a51 },
+	states = {s0 s1 s2 s3 s4 s5 },
+	initialStates = {s5 },
+	finalStates = {s4 },
+	transitions = {
+		(s0 a29 s4)
+		(s1 a19 s1)
+		(s1 a20 s1)
+		(s1 a21 s1)
+		(s1 a38 s1)
+		(s1 a22 s1)
+		(s1 a39 s1)
+		(s1 a23 s1)
+		(s1 a24 s1)
+		(s1 a25 s1)
+		(s1 a40 s1)
+		(s1 a41 s1)
+		(s1 a26 s4)
+		(s1 a42 s1)
+		(s1 a43 s1)
+		(s1 a10 s1)
+		(s1 a11 s1)
+		(s1 a45 s1)
+		(s1 a12 s1)
+		(s1 a13 s1)
+		(s1 a14 s1)
+		(s1 a15 s1)
+		(s1 a16 s1)
+		(s1 a17 s1)
+		(s1 a18 s3)
+		(s2 a35 s2)
+		(s2 a27 s2)
+		(s2 a36 s2)
+		(s2 a37 s2)
+		(s2 a28 s0)
+		(s2 a31 s2)
+		(s2 a32 s2)
+		(s2 a34 s2)
+		(s3 a9 s1)
+		(s3 a45 s3)
+		(s3 a39 s3)
+		(s3 a40 s3)
+		(s3 a6 s3)
+		(s3 a41 s3)
+		(s3 a7 s3)
+		(s3 a42 s3)
+		(s3 a8 s3)
+		(s3 a43 s3)
+		(s4 a27 s2)
+		(s4 a30 s2)
+		(s5 a0 s5)
+		(s5 a1 s5)
+		(s5 a3 s5)
+		(s5 a5 s3)
+	}
+);
