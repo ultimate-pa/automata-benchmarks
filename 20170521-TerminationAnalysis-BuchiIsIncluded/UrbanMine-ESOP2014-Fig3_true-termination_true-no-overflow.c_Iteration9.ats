@@ -1,34 +1,179 @@
-// Testfile dumped by Ultimate at 2017/05/21 20:48:31
+// Testfile dumped by Ultimate at 2017/05/21 20:48:21
 //
 // 
 
 FiniteAutomaton inclusionLHS = (
 	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 },
-	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 },
-	initialStates = {s11 },
-	finalStates = {s0 s1 s5 s6 s9 s11 s12 s13 s15 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 },
+	initialStates = {s24 },
+	finalStates = {s0 s1 s2 s3 s4 s5 s6 s7 s10 s11 s12 s13 s14 s17 s18 s21 s22 s24 s25 s26 s28 s29 s34 },
 	transitions = {
-		(s0 a9 s15)
-		(s1 a5 s0)
-		(s2 a10 s16)
-		(s2 a11 s13)
+		(s0 a10 s30)
+		(s0 a11 s28)
+		(s1 a9 s0)
+		(s2 a5 s1)
+		(s3 a9 s22)
+		(s3 a6 s34)
+		(s4 a5 s5)
+		(s5 a9 s10)
+		(s6 a5 s21)
+		(s7 a3 s4)
+		(s8 a10 s30)
+		(s8 a11 s28)
+		(s9 a9 s8)
+		(s10 a10 s7)
+		(s10 a11 s26)
+		(s11 a9 s10)
+		(s11 a6 s34)
+		(s12 a5 s11)
+		(s13 a5 s14)
+		(s14 a6 s34)
+		(s15 a5 s16)
+		(s16 a9 s23)
+		(s17 a7 s18)
+		(s18 a3 s13)
+		(s19 a8 s20)
+		(s20 a3 s33)
+		(s21 a9 s22)
+		(s22 a11 s26)
+		(s23 a10 s27)
+		(s24 a0 s25)
+		(s25 a3 s2)
+		(s26 a3 s12)
+		(s27 a3 s6)
+		(s27 a3 s15)
+		(s28 a3 s29)
+		(s28 a3 s15)
+		(s29 a5 s3)
+		(s30 a3 s31)
+		(s31 a5 s9)
+		(s32 a6 s19)
+		(s32 a6 s17)
+		(s33 a5 s32)
+		(s34 a7 s18)
+		(s34 a8 s20)
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/21 20:48:31
+//
+// RefinementSetting [mInterpolantAutomaton=ScroogeNondeterminism, mBouncerStem=true, mBouncerLoop=false, mScroogeNondeterminismStem=true, mScroogeNondeterminismLoop=false, mCannibalizeLoop=false]
+
+FiniteAutomaton inclusionRHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 },
+	states = {s0 s1 s2 s3 },
+	initialStates = {s0 },
+	finalStates = {s3 },
+	transitions = {
+		(s0 a0 s0)
+		(s0 a3 s0)
+		(s0 a9 s0)
+		(s0 a10 s0)
+		(s0 a5 s0)
+		(s0 a11 s0)
+		(s0 a11 s3)
+		(s1 a10 s3)
+		(s2 a9 s1)
+		(s2 a5 s2)
+		(s3 a3 s2)
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/21 20:48:25
+//
+// 
+
+FiniteAutomaton inclusionLHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 },
+	initialStates = {s13 },
+	finalStates = {s2 s3 s4 s5 s6 s7 s10 s13 s14 s15 s16 s18 s20 },
+	transitions = {
+		(s0 a10 s1)
+		(s0 a11 s20)
+		(s1 a3 s8)
+		(s2 a10 s1)
+		(s2 a11 s20)
 		(s3 a9 s2)
 		(s4 a5 s3)
-		(s5 a5 s6)
-		(s6 a9 s9)
-		(s7 a5 s8)
-		(s8 a9 s10)
-		(s9 a11 s13)
-		(s10 a10 s14)
-		(s11 a0 s12)
-		(s12 a3 s1)
-		(s13 a3 s5)
-		(s13 a3 s7)
-		(s14 a3 s5)
-		(s14 a3 s7)
-		(s15 a10 s16)
-		(s15 a11 s13)
-		(s16 a3 s4)
+		(s5 a9 s15)
+		(s6 a5 s7)
+		(s7 a9 s10)
+		(s8 a5 s9)
+		(s9 a9 s0)
+		(s10 a10 s16)
+		(s10 a11 s16)
+		(s11 a9 s12)
+		(s12 a10 s17)
+		(s13 a0 s14)
+		(s14 a3 s4)
+		(s15 a11 s16)
+		(s16 a3 s6)
+		(s17 a3 s18)
+		(s17 a3 s19)
+		(s18 a5 s5)
+		(s19 a5 s11)
+		(s20 a3 s18)
+		(s20 a3 s19)
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/21 20:48:31
+//
+// RefinementSetting [mInterpolantAutomaton=ScroogeNondeterminism, mBouncerStem=true, mBouncerLoop=false, mScroogeNondeterminismStem=true, mScroogeNondeterminismLoop=false, mCannibalizeLoop=false]
+
+FiniteAutomaton inclusionRHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 },
+	states = {s0 s1 s2 s3 },
+	initialStates = {s0 },
+	finalStates = {s3 },
+	transitions = {
+		(s0 a0 s0)
+		(s0 a3 s0)
+		(s0 a9 s0)
+		(s0 a10 s0)
+		(s0 a5 s0)
+		(s0 a11 s0)
+		(s0 a11 s3)
+		(s1 a10 s3)
+		(s2 a9 s1)
+		(s2 a5 s2)
+		(s3 a3 s2)
+	}
+);
+// Testfile dumped by Ultimate at 2017/05/21 20:48:25
+//
+// 
+
+FiniteAutomaton inclusionLHS = (
+	alphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 },
+	initialStates = {s13 },
+	finalStates = {s2 s3 s4 s5 s6 s7 s10 s13 s14 s15 s16 s18 s20 },
+	transitions = {
+		(s0 a10 s1)
+		(s0 a11 s20)
+		(s1 a3 s8)
+		(s2 a10 s1)
+		(s2 a11 s20)
+		(s3 a9 s2)
+		(s4 a5 s3)
+		(s5 a9 s15)
+		(s6 a5 s7)
+		(s7 a9 s10)
+		(s8 a5 s9)
+		(s9 a9 s0)
+		(s10 a10 s16)
+		(s10 a11 s16)
+		(s11 a9 s12)
+		(s12 a10 s17)
+		(s13 a0 s14)
+		(s14 a3 s4)
+		(s15 a11 s16)
+		(s16 a3 s6)
+		(s17 a3 s18)
+		(s17 a3 s19)
+		(s18 a5 s5)
+		(s19 a5 s11)
+		(s20 a3 s18)
+		(s20 a3 s19)
 	}
 );
 // Testfile dumped by Ultimate at 2017/05/21 20:48:31
