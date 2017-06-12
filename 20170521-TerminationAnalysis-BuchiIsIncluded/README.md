@@ -7,7 +7,7 @@ In order to produce these automata benchmarks, we run the follwing
 
 Each .ats file corresponds to one interation of our cegar loop and contains two Büchi automata
 1. the abstraction of this iteration
-2. the "interpolant automaton" (called module in our CAV 2014 paper) that was build in this iteration
+2. the "interpolant automaton" (called _module_ in our CAV 2014 paper) that was build in this iteration
 
 These automata are interesting benchmarks for inclusion checks because at the end of the iteration we construct the language difference of both and at the beginning of the next iteration we check emptiness of the difference.
 
