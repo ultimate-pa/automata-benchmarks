@@ -1,7 +1,7 @@
 In order to produce these automata benchmarks, we run the follwing
 * Termination analysis of Ultimate Automizer
 * on the termination category benchmarks of SV-COMP 2017 but limited the number of C files per directory to 50 (randomly selected)
-* using the SUNFLOWER settings (the SUNFLOWER settings deviate from the default SV-COMP settings in the strategy in which the BÜchi automata are build: we already allow nondeterministic automata in the first stage)
+* using the SUNFLOWER settings (the SUNFLOWER settings deviate from the default SV-COMP settings in the strategy in which the Büchi automata are build: we already allow nondeterministic automata in the first stage)
 * using procedure inlining
 * using a timeout of 300s 
 
