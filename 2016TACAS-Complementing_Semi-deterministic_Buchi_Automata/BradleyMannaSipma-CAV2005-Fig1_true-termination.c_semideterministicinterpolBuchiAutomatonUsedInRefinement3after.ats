@@ -1,0 +1,29 @@
+// Testfile dumped by Ultimate at 2015/10/05 03:43:27
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=false, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"assume !!(gcd_~y1 != gcd_~y2);" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~ret2, main_~y1~6, main_~y2~6;main_~y1~6 := main_#t~nondet0;havoc main_#t~nondet0;main_~y2~6 := main_#t~nondet1;havoc main_#t~nondet1;assume !(main_~y1~6 > 0 && main_~y2~6 > 0);" "assume true;" "main_#res := 0;#t~ret3 := main_#res;assume true;" "assume true;" "assume !(gcd_~y1 > gcd_~y2);gcd_~y2 := gcd_~y2 - gcd_~y1;" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~ret2, main_~y1~6, main_~y2~6;main_~y1~6 := main_#t~nondet0;havoc main_#t~nondet0;main_~y2~6 := main_#t~nondet1;havoc main_#t~nondet1;assume main_~y1~6 > 0 && main_~y2~6 > 0;gcd_#in~y1, gcd_#in~y2 := main_~y1~6, main_~y2~6;havoc gcd_#res;havoc gcd_~y1, gcd_~y2;gcd_~y1 := gcd_#in~y1;gcd_~y2 := gcd_#in~y2;" "assume !(gcd_~y1 != gcd_~y2);" "assume gcd_~y1 > gcd_~y2;gcd_~y1 := gcd_~y1 - gcd_~y2;" "gcd_#res := gcd_~y1;main_#t~ret2 := gcd_#res;havoc main_#t~ret2;" "assume !true;" },
+	returnAlphabet = {},
+	states = {"440#(and (<= (+ ULTIMATE.start_gcd_~y2 1) (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_gcd_~y1))" "441#(and (<= ULTIMATE.start_gcd_~y2 (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 1 ULTIMATE.start_gcd_~y1))" "431#unseeded" },
+	initialStates = {"431#unseeded" },
+	finalStates = {"440#(and (<= (+ ULTIMATE.start_gcd_~y2 1) (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_gcd_~y1))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("440#(and (<= (+ ULTIMATE.start_gcd_~y2 1) (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_gcd_~y1))" "assume true;" "441#(and (<= ULTIMATE.start_gcd_~y2 (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 1 ULTIMATE.start_gcd_~y1))")
+		 ("441#(and (<= ULTIMATE.start_gcd_~y2 (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 1 ULTIMATE.start_gcd_~y1))" "assume !!(gcd_~y1 != gcd_~y2);" "441#(and (<= ULTIMATE.start_gcd_~y2 (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 1 ULTIMATE.start_gcd_~y1))")
+		 ("441#(and (<= ULTIMATE.start_gcd_~y2 (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 1 ULTIMATE.start_gcd_~y1))" "assume true;" "441#(and (<= ULTIMATE.start_gcd_~y2 (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 1 ULTIMATE.start_gcd_~y1))")
+		 ("441#(and (<= ULTIMATE.start_gcd_~y2 (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 1 ULTIMATE.start_gcd_~y1))" "assume !(gcd_~y1 > gcd_~y2);gcd_~y2 := gcd_~y2 - gcd_~y1;" "440#(and (<= (+ ULTIMATE.start_gcd_~y2 1) (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_gcd_~y1))")
+		 ("431#unseeded" "assume !!(gcd_~y1 != gcd_~y2);" "431#unseeded")
+		 ("431#unseeded" "assume true;" "431#unseeded")
+		 ("431#unseeded" "assume true;" "431#unseeded")
+		 ("431#unseeded" "assume !(gcd_~y1 > gcd_~y2);gcd_~y2 := gcd_~y2 - gcd_~y1;" "431#unseeded")
+		 ("431#unseeded" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~ret2, main_~y1~6, main_~y2~6;main_~y1~6 := main_#t~nondet0;havoc main_#t~nondet0;main_~y2~6 := main_#t~nondet1;havoc main_#t~nondet1;assume main_~y1~6 > 0 && main_~y2~6 > 0;gcd_#in~y1, gcd_#in~y2 := main_~y1~6, main_~y2~6;havoc gcd_#res;havoc gcd_~y1, gcd_~y2;gcd_~y1 := gcd_#in~y1;gcd_~y2 := gcd_#in~y2;" "431#unseeded")
+		 ("431#unseeded" "assume gcd_~y1 > gcd_~y2;gcd_~y1 := gcd_~y1 - gcd_~y2;" "440#(and (<= (+ ULTIMATE.start_gcd_~y2 1) (+ ULTIMATE.start_gcd_~y1 oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_gcd_~y1))")
+		 ("431#unseeded" "assume gcd_~y1 > gcd_~y2;gcd_~y1 := gcd_~y1 - gcd_~y2;" "431#unseeded")
+	},
+	returnTransitions = {
+	}
+);

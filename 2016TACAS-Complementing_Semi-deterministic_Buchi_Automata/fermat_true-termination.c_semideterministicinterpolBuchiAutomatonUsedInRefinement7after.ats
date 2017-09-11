@@ -1,0 +1,38 @@
+// Testfile dumped by Ultimate at 2015/10/05 13:20:18
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=false, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"main_#t~ret3 := fermat_#res;main_#res := main_#t~ret3;havoc main_#t~ret3;#t~ret4 := main_#res;assume true;" "assume fermat_~a~1 > fermat_~MAX~1;fermat_~a~1 := 1;fermat_#t~post1 := fermat_~b~1;fermat_~b~1 := fermat_#t~post1 + 1;havoc fermat_#t~post1;" "assume fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1;fermat_#res := 1;" "assume !!true;" "assume fermat_~c~1 > fermat_~MAX~1;" "assume true;" "assume fermat_~b~1 > fermat_~MAX~1;fermat_~b~1 := 1;fermat_#t~post2 := fermat_~c~1;fermat_~c~1 := fermat_#t~post2 + 1;havoc fermat_#t~post2;" "assume !(fermat_~a~1 > fermat_~MAX~1);" "havoc main_#res;havoc main_#t~ret3;havoc fermat_#res;havoc fermat_#t~post0, fermat_#t~post1, fermat_#t~post2, fermat_~MAX~1, fermat_~a~1, fermat_~b~1, fermat_~c~1;fermat_~MAX~1 := 1000;fermat_~a~1 := 1;fermat_~b~1 := 1;fermat_~c~1 := 1;" "assume !(fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1);fermat_#t~post0 := fermat_~a~1;fermat_~a~1 := fermat_#t~post0 + 1;havoc fermat_#t~post0;" "assume !(fermat_~c~1 > fermat_~MAX~1);" "assume !true;" "fermat_#res := 0;" "assume !(fermat_~b~1 > fermat_~MAX~1);" "assume !true;" },
+	returnAlphabet = {},
+	states = {"4629#(and (<= 0 oldRank0) (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)))" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "4625#unseeded" "4699#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)) (<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1)))" },
+	initialStates = {"4625#unseeded" },
+	finalStates = {"4629#(and (<= 0 oldRank0) (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("4629#(and (<= 0 oldRank0) (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)))" "assume !!true;" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4629#(and (<= 0 oldRank0) (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)))" "assume !(fermat_~c~1 > fermat_~MAX~1);" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "assume fermat_~a~1 > fermat_~MAX~1;fermat_~a~1 := 1;fermat_#t~post1 := fermat_~b~1;fermat_~b~1 := fermat_#t~post1 + 1;havoc fermat_#t~post1;" "4699#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)) (<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1)))")
+		 ("4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "assume !!true;" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "assume true;" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "assume !(fermat_~a~1 > fermat_~MAX~1);" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "assume !(fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1);fermat_#t~post0 := fermat_~a~1;fermat_~a~1 := fermat_#t~post0 + 1;havoc fermat_#t~post0;" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "assume !(fermat_~c~1 > fermat_~MAX~1);" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))" "assume !(fermat_~b~1 > fermat_~MAX~1);" "4630#(<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1))")
+		 ("4625#unseeded" "assume fermat_~a~1 > fermat_~MAX~1;fermat_~a~1 := 1;fermat_#t~post1 := fermat_~b~1;fermat_~b~1 := fermat_#t~post1 + 1;havoc fermat_#t~post1;" "4625#unseeded")
+		 ("4625#unseeded" "assume !!true;" "4625#unseeded")
+		 ("4625#unseeded" "assume true;" "4629#(and (<= 0 oldRank0) (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)))")
+		 ("4625#unseeded" "assume true;" "4625#unseeded")
+		 ("4625#unseeded" "assume fermat_~b~1 > fermat_~MAX~1;fermat_~b~1 := 1;fermat_#t~post2 := fermat_~c~1;fermat_~c~1 := fermat_#t~post2 + 1;havoc fermat_#t~post2;" "4625#unseeded")
+		 ("4625#unseeded" "assume !(fermat_~a~1 > fermat_~MAX~1);" "4625#unseeded")
+		 ("4625#unseeded" "havoc main_#res;havoc main_#t~ret3;havoc fermat_#res;havoc fermat_#t~post0, fermat_#t~post1, fermat_#t~post2, fermat_~MAX~1, fermat_~a~1, fermat_~b~1, fermat_~c~1;fermat_~MAX~1 := 1000;fermat_~a~1 := 1;fermat_~b~1 := 1;fermat_~c~1 := 1;" "4625#unseeded")
+		 ("4625#unseeded" "assume !(fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1);fermat_#t~post0 := fermat_~a~1;fermat_~a~1 := fermat_#t~post0 + 1;havoc fermat_#t~post0;" "4625#unseeded")
+		 ("4625#unseeded" "assume !(fermat_~c~1 > fermat_~MAX~1);" "4625#unseeded")
+		 ("4625#unseeded" "assume !(fermat_~b~1 > fermat_~MAX~1);" "4625#unseeded")
+		 ("4699#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)) (<= ULTIMATE.start_fermat_~MAX~1 (+ oldRank0 ULTIMATE.start_fermat_~b~1)))" "assume !(fermat_~b~1 > fermat_~MAX~1);" "4629#(and (<= 0 oldRank0) (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ oldRank0 ULTIMATE.start_fermat_~b~1)))")
+	},
+	returnTransitions = {
+	}
+);

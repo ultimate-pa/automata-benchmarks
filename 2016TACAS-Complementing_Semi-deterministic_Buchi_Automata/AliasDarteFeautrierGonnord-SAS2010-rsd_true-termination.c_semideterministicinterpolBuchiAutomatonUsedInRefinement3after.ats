@@ -1,0 +1,29 @@
+// Testfile dumped by Ultimate at 2015/10/05 03:43:18
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=false, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"assume main_#t~nondet1 != 0;havoc main_#t~nondet1;main_#t~post2 := main_~da~2;main_~da~2 := main_#t~post2 - 1;havoc main_#t~post2;" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~post2, main_~r~2, main_~da~2, main_~db~2, main_~temp~2;main_~r~2 := main_#t~nondet0;havoc main_#t~nondet0;havoc main_~da~2;havoc main_~db~2;havoc main_~temp~2;assume !(main_~r~2 >= 0);" "assume true;" "assume !(main_#t~nondet1 != 0);havoc main_#t~nondet1;main_~temp~2 := main_~da~2;main_~da~2 := main_~db~2 - 1;main_~db~2 := main_~da~2;" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~post2, main_~r~2, main_~da~2, main_~db~2, main_~temp~2;main_~r~2 := main_#t~nondet0;havoc main_#t~nondet0;havoc main_~da~2;havoc main_~db~2;havoc main_~temp~2;assume main_~r~2 >= 0;main_~da~2 := 2 * main_~r~2;main_~db~2 := 2 * main_~r~2;" "main_#res := 0;#t~ret3 := main_#res;assume true;" "assume !(main_~da~2 >= main_~r~2);" "assume true;" "assume !true;" "assume !!(main_~da~2 >= main_~r~2);" "assume true;" },
+	returnAlphabet = {},
+	states = {"429#(and (<= (+ (* 2 ULTIMATE.start_main_~da~2) 2) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))) (<= 0 oldRank0))" "445#(and (<= ULTIMATE.start_main_~r~2 ULTIMATE.start_main_~da~2) (<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))))" "430#(<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2)))" "420#unseeded" },
+	initialStates = {"420#unseeded" },
+	finalStates = {"429#(and (<= (+ (* 2 ULTIMATE.start_main_~da~2) 2) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))) (<= 0 oldRank0))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("429#(and (<= (+ (* 2 ULTIMATE.start_main_~da~2) 2) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))) (<= 0 oldRank0))" "assume true;" "430#(<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2)))")
+		 ("445#(and (<= ULTIMATE.start_main_~r~2 ULTIMATE.start_main_~da~2) (<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))))" "assume main_#t~nondet1 != 0;havoc main_#t~nondet1;main_#t~post2 := main_~da~2;main_~da~2 := main_#t~post2 - 1;havoc main_#t~post2;" "429#(and (<= (+ (* 2 ULTIMATE.start_main_~da~2) 2) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))) (<= 0 oldRank0))")
+		 ("430#(<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2)))" "assume !!(main_~da~2 >= main_~r~2);" "445#(and (<= ULTIMATE.start_main_~r~2 ULTIMATE.start_main_~da~2) (<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))))")
+		 ("430#(<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2)))" "assume true;" "430#(<= (+ (* 2 ULTIMATE.start_main_~da~2) 1) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2)))")
+		 ("420#unseeded" "assume main_#t~nondet1 != 0;havoc main_#t~nondet1;main_#t~post2 := main_~da~2;main_~da~2 := main_#t~post2 - 1;havoc main_#t~post2;" "420#unseeded")
+		 ("420#unseeded" "assume true;" "420#unseeded")
+		 ("420#unseeded" "assume !(main_#t~nondet1 != 0);havoc main_#t~nondet1;main_~temp~2 := main_~da~2;main_~da~2 := main_~db~2 - 1;main_~db~2 := main_~da~2;" "429#(and (<= (+ (* 2 ULTIMATE.start_main_~da~2) 2) (+ oldRank0 (* 2 ULTIMATE.start_main_~r~2))) (<= 0 oldRank0))")
+		 ("420#unseeded" "assume !(main_#t~nondet1 != 0);havoc main_#t~nondet1;main_~temp~2 := main_~da~2;main_~da~2 := main_~db~2 - 1;main_~db~2 := main_~da~2;" "420#unseeded")
+		 ("420#unseeded" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~post2, main_~r~2, main_~da~2, main_~db~2, main_~temp~2;main_~r~2 := main_#t~nondet0;havoc main_#t~nondet0;havoc main_~da~2;havoc main_~db~2;havoc main_~temp~2;assume main_~r~2 >= 0;main_~da~2 := 2 * main_~r~2;main_~db~2 := 2 * main_~r~2;" "420#unseeded")
+		 ("420#unseeded" "assume !!(main_~da~2 >= main_~r~2);" "420#unseeded")
+		 ("420#unseeded" "assume true;" "420#unseeded")
+	},
+	returnTransitions = {
+	}
+);

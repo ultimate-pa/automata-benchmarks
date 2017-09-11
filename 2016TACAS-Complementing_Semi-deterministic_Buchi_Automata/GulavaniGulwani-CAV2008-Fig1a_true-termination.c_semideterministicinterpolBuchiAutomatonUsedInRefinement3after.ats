@@ -1,0 +1,29 @@
+// Testfile dumped by Ultimate at 2015/10/05 03:49:08
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=false, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"assume !!(main_~x~2 < main_~y~2);main_~i~2 := main_~i~2 + 1;" "assume true;" "assume true;" "assume !(main_~z~2 > main_~x~2);main_~z~2 := main_~z~2 + 1;" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~nondet2, main_#t~nondet3, main_~x~2, main_~y~2, main_~z~2, main_~i~2;main_~x~2 := main_#t~nondet0;havoc main_#t~nondet0;main_~y~2 := main_#t~nondet1;havoc main_#t~nondet1;main_~z~2 := main_#t~nondet2;havoc main_#t~nondet2;main_~i~2 := main_#t~nondet3;havoc main_#t~nondet3;" "assume !(main_~x~2 < main_~y~2);" "assume !true;" "assume main_~z~2 > main_~x~2;main_~x~2 := main_~x~2 + 1;" "main_#res := 0;#t~ret4 := main_#res;assume true;" },
+	returnAlphabet = {},
+	states = {"411#(and (<= 0 oldRank0) (<= (+ (* 2 ULTIMATE.start_main_~x~2) 2) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0)))" "412#(<= (+ (* 2 ULTIMATE.start_main_~x~2) 1) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0))" "403#unseeded" },
+	initialStates = {"403#unseeded" },
+	finalStates = {"411#(and (<= 0 oldRank0) (<= (+ (* 2 ULTIMATE.start_main_~x~2) 2) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0)))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("411#(and (<= 0 oldRank0) (<= (+ (* 2 ULTIMATE.start_main_~x~2) 2) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0)))" "assume true;" "412#(<= (+ (* 2 ULTIMATE.start_main_~x~2) 1) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0))")
+		 ("412#(<= (+ (* 2 ULTIMATE.start_main_~x~2) 1) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0))" "assume !!(main_~x~2 < main_~y~2);main_~i~2 := main_~i~2 + 1;" "412#(<= (+ (* 2 ULTIMATE.start_main_~x~2) 1) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0))")
+		 ("412#(<= (+ (* 2 ULTIMATE.start_main_~x~2) 1) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0))" "assume true;" "412#(<= (+ (* 2 ULTIMATE.start_main_~x~2) 1) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0))")
+		 ("412#(<= (+ (* 2 ULTIMATE.start_main_~x~2) 1) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0))" "assume !(main_~z~2 > main_~x~2);main_~z~2 := main_~z~2 + 1;" "411#(and (<= 0 oldRank0) (<= (+ (* 2 ULTIMATE.start_main_~x~2) 2) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0)))")
+		 ("403#unseeded" "assume !!(main_~x~2 < main_~y~2);main_~i~2 := main_~i~2 + 1;" "403#unseeded")
+		 ("403#unseeded" "assume true;" "403#unseeded")
+		 ("403#unseeded" "assume true;" "403#unseeded")
+		 ("403#unseeded" "assume !(main_~z~2 > main_~x~2);main_~z~2 := main_~z~2 + 1;" "403#unseeded")
+		 ("403#unseeded" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~nondet2, main_#t~nondet3, main_~x~2, main_~y~2, main_~z~2, main_~i~2;main_~x~2 := main_#t~nondet0;havoc main_#t~nondet0;main_~y~2 := main_#t~nondet1;havoc main_#t~nondet1;main_~z~2 := main_#t~nondet2;havoc main_#t~nondet2;main_~i~2 := main_#t~nondet3;havoc main_#t~nondet3;" "403#unseeded")
+		 ("403#unseeded" "assume main_~z~2 > main_~x~2;main_~x~2 := main_~x~2 + 1;" "411#(and (<= 0 oldRank0) (<= (+ (* 2 ULTIMATE.start_main_~x~2) 2) (+ (* 2 ULTIMATE.start_main_~z~2) oldRank0)))")
+		 ("403#unseeded" "assume main_~z~2 > main_~x~2;main_~x~2 := main_~x~2 + 1;" "403#unseeded")
+	},
+	returnTransitions = {
+	}
+);

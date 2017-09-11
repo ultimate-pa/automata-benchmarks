@@ -1,0 +1,36 @@
+// Testfile dumped by Ultimate at 2015/10/05 13:18:52
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=false, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"main_#t~ret3 := fermat_#res;main_#res := main_#t~ret3;havoc main_#t~ret3;#t~ret4 := main_#res;assume true;" "assume fermat_~a~1 > fermat_~MAX~1;fermat_~a~1 := 1;fermat_#t~post1 := fermat_~b~1;fermat_~b~1 := fermat_#t~post1 + 1;havoc fermat_#t~post1;" "assume fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1;fermat_#res := 1;" "assume !!true;" "assume fermat_~c~1 > fermat_~MAX~1;" "assume true;" "assume fermat_~b~1 > fermat_~MAX~1;fermat_~b~1 := 1;fermat_#t~post2 := fermat_~c~1;fermat_~c~1 := fermat_#t~post2 + 1;havoc fermat_#t~post2;" "assume !(fermat_~a~1 > fermat_~MAX~1);" "havoc main_#res;havoc main_#t~ret3;havoc fermat_#res;havoc fermat_#t~post0, fermat_#t~post1, fermat_#t~post2, fermat_~MAX~1, fermat_~a~1, fermat_~b~1, fermat_~c~1;fermat_~MAX~1 := 1000;fermat_~a~1 := 1;fermat_~b~1 := 1;fermat_~c~1 := 1;" "assume !(fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1);fermat_#t~post0 := fermat_~a~1;fermat_~a~1 := fermat_#t~post0 + 1;havoc fermat_#t~post0;" "assume !(fermat_~c~1 > fermat_~MAX~1);" "assume !true;" "fermat_#res := 0;" "assume !(fermat_~b~1 > fermat_~MAX~1);" "assume !true;" },
+	returnAlphabet = {},
+	states = {"2302#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= 0 oldRank0))" "2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))" "2321#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0)))" "2290#unseeded" },
+	initialStates = {"2290#unseeded" },
+	finalStates = {"2302#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= 0 oldRank0))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("2302#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= 0 oldRank0))" "assume fermat_~b~1 > fermat_~MAX~1;fermat_~b~1 := 1;fermat_#t~post2 := fermat_~c~1;fermat_~c~1 := fermat_#t~post2 + 1;havoc fermat_#t~post2;" "2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))")
+		 ("2302#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= 0 oldRank0))" "assume !(fermat_~c~1 > fermat_~MAX~1);" "2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))")
+		 ("2302#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= 0 oldRank0))" "assume !(fermat_~b~1 > fermat_~MAX~1);" "2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))")
+		 ("2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))" "assume !!true;" "2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))")
+		 ("2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))" "assume true;" "2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))")
+		 ("2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))" "assume !(fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1);fermat_#t~post0 := fermat_~a~1;fermat_~a~1 := fermat_#t~post0 + 1;havoc fermat_#t~post0;" "2321#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0)))")
+		 ("2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))" "assume !(fermat_~c~1 > fermat_~MAX~1);" "2303#(<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0))")
+		 ("2321#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= ULTIMATE.start_fermat_~MAX~1 (+ ULTIMATE.start_fermat_~a~1 oldRank0)))" "assume !(fermat_~a~1 > fermat_~MAX~1);" "2302#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= 0 oldRank0))")
+		 ("2290#unseeded" "assume fermat_~a~1 > fermat_~MAX~1;fermat_~a~1 := 1;fermat_#t~post1 := fermat_~b~1;fermat_~b~1 := fermat_#t~post1 + 1;havoc fermat_#t~post1;" "2290#unseeded")
+		 ("2290#unseeded" "assume !!true;" "2290#unseeded")
+		 ("2290#unseeded" "assume true;" "2290#unseeded")
+		 ("2290#unseeded" "assume fermat_~b~1 > fermat_~MAX~1;fermat_~b~1 := 1;fermat_#t~post2 := fermat_~c~1;fermat_~c~1 := fermat_#t~post2 + 1;havoc fermat_#t~post2;" "2290#unseeded")
+		 ("2290#unseeded" "assume !(fermat_~a~1 > fermat_~MAX~1);" "2290#unseeded")
+		 ("2290#unseeded" "havoc main_#res;havoc main_#t~ret3;havoc fermat_#res;havoc fermat_#t~post0, fermat_#t~post1, fermat_#t~post2, fermat_~MAX~1, fermat_~a~1, fermat_~b~1, fermat_~c~1;fermat_~MAX~1 := 1000;fermat_~a~1 := 1;fermat_~b~1 := 1;fermat_~c~1 := 1;" "2290#unseeded")
+		 ("2290#unseeded" "assume !(fermat_~a~1 * fermat_~a~1 * fermat_~a~1 == fermat_~b~1 * fermat_~b~1 * fermat_~b~1 + fermat_~c~1 * fermat_~c~1 * fermat_~c~1);fermat_#t~post0 := fermat_~a~1;fermat_~a~1 := fermat_#t~post0 + 1;havoc fermat_#t~post0;" "2290#unseeded")
+		 ("2290#unseeded" "assume !(fermat_~c~1 > fermat_~MAX~1);" "2290#unseeded")
+		 ("2290#unseeded" "assume !(fermat_~b~1 > fermat_~MAX~1);" "2302#(and (<= (+ ULTIMATE.start_fermat_~MAX~1 1) (+ ULTIMATE.start_fermat_~a~1 oldRank0)) (<= 0 oldRank0))")
+		 ("2290#unseeded" "assume !(fermat_~b~1 > fermat_~MAX~1);" "2290#unseeded")
+	},
+	returnTransitions = {
+	}
+);

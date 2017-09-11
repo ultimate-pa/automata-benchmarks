@@ -1,0 +1,27 @@
+// Testfile dumped by Ultimate at 2015/10/05 13:12:06
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=false, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~ret2;test_fun_#in~x, test_fun_#in~y := main_#t~nondet0, main_#t~nondet1;havoc test_fun_#res;havoc test_fun_~x, test_fun_~y, test_fun_~c~2;test_fun_~x := test_fun_#in~x;test_fun_~y := test_fun_#in~y;test_fun_~c~2 := 0;" "assume true;assume !(test_fun_~x >= 0);" "assume true;assume !!(test_fun_~x >= 0);test_fun_~y := 1;" "test_fun_#res := test_fun_~c~2;main_#t~ret2 := test_fun_#res;main_#res := main_#t~ret2;havoc main_#t~nondet0;havoc main_#t~nondet1;havoc main_#t~ret2;#t~ret3 := main_#res;assume true;" "assume !true;" "assume true;assume !!(test_fun_~x > test_fun_~y);test_fun_~y := 2 * test_fun_~y;test_fun_~c~2 := test_fun_~c~2 + 1;" "assume !true;" "test_fun_~x := test_fun_~x - 1;" "assume true;assume !(test_fun_~x > test_fun_~y);" },
+	returnAlphabet = {},
+	states = {"442#unseeded" "447#(and (<= (+ ULTIMATE.start_test_fun_~x 1) (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_test_fun_~y))" "448#(and (<= ULTIMATE.start_test_fun_~x (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 1 ULTIMATE.start_test_fun_~y))" },
+	initialStates = {"442#unseeded" },
+	finalStates = {"447#(and (<= (+ ULTIMATE.start_test_fun_~x 1) (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_test_fun_~y))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("442#unseeded" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_#t~ret2;test_fun_#in~x, test_fun_#in~y := main_#t~nondet0, main_#t~nondet1;havoc test_fun_#res;havoc test_fun_~x, test_fun_~y, test_fun_~c~2;test_fun_~x := test_fun_#in~x;test_fun_~y := test_fun_#in~y;test_fun_~c~2 := 0;" "442#unseeded")
+		 ("442#unseeded" "assume true;assume !!(test_fun_~x >= 0);test_fun_~y := 1;" "442#unseeded")
+		 ("442#unseeded" "assume true;assume !!(test_fun_~x >= 0);test_fun_~y := 1;" "447#(and (<= (+ ULTIMATE.start_test_fun_~x 1) (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_test_fun_~y))")
+		 ("442#unseeded" "assume true;assume !!(test_fun_~x > test_fun_~y);test_fun_~y := 2 * test_fun_~y;test_fun_~c~2 := test_fun_~c~2 + 1;" "442#unseeded")
+		 ("442#unseeded" "test_fun_~x := test_fun_~x - 1;" "442#unseeded")
+		 ("442#unseeded" "assume true;assume !(test_fun_~x > test_fun_~y);" "442#unseeded")
+		 ("447#(and (<= (+ ULTIMATE.start_test_fun_~x 1) (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_test_fun_~y))" "assume true;assume !!(test_fun_~x > test_fun_~y);test_fun_~y := 2 * test_fun_~y;test_fun_~c~2 := test_fun_~c~2 + 1;" "447#(and (<= (+ ULTIMATE.start_test_fun_~x 1) (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_test_fun_~y))")
+		 ("447#(and (<= (+ ULTIMATE.start_test_fun_~x 1) (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 0 oldRank0) (<= 1 ULTIMATE.start_test_fun_~y))" "assume true;assume !(test_fun_~x > test_fun_~y);" "448#(and (<= ULTIMATE.start_test_fun_~x (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 1 ULTIMATE.start_test_fun_~y))")
+		 ("448#(and (<= ULTIMATE.start_test_fun_~x (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 1 ULTIMATE.start_test_fun_~y))" "test_fun_~x := test_fun_~x - 1;" "448#(and (<= ULTIMATE.start_test_fun_~x (+ ULTIMATE.start_test_fun_~y oldRank0)) (<= 1 ULTIMATE.start_test_fun_~y))")
+	},
+	returnTransitions = {
+	}
+);

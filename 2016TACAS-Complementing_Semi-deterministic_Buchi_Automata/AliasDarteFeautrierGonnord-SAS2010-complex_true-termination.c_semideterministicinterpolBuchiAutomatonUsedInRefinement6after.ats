@@ -1,0 +1,37 @@
+// Testfile dumped by Ultimate at 2015/10/05 03:43:08
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=true, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"assume !(main_~b~2 >= 10 && main_~b~2 <= 12);main_~a~2 := main_~a~2 + 1;" "assume true;" "assume !!(main_~b~2 < main_~a~2);" "assume !(main_~b~2 > 5);main_~b~2 := main_~b~2 + 2;" "assume !(main_~b~2 < main_~a~2);" "assume main_~b~2 >= 10 && main_~b~2 <= 12;main_~a~2 := main_~a~2 + 10;" "assume main_~b~2 > 5;main_~b~2 := main_~b~2 + 7;" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_~a~2, main_~b~2;main_~a~2 := main_#t~nondet0;havoc main_#t~nondet0;main_~b~2 := main_#t~nondet1;havoc main_#t~nondet1;" "assume !true;" "assume true;assume !!(main_~a~2 < 30);" "assume true;assume !(main_~a~2 < 30);" "main_~a~2 := main_~a~2 + 2;main_~b~2 := main_~b~2 - 10;" "main_#res := 0;#t~ret2 := main_#res;assume true;" "assume true;" "assume !true;" },
+	returnAlphabet = {},
+	states = {"2852#unseeded" "2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))" "2907#(and (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (exists ((v_ULTIMATE.start_main_~b~2_90 Int)) (and (<= (+ v_ULTIMATE.start_main_~b~2_90 7) ULTIMATE.start_main_~b~2) (<= 6 v_ULTIMATE.start_main_~b~2_90) (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 v_ULTIMATE.start_main_~b~2_90) oldRank0)) (<= (+ v_ULTIMATE.start_main_~b~2_90 1) ULTIMATE.start_main_~a~2))))" "2891#(and (<= (+ ULTIMATE.start_main_~b~2 1) ULTIMATE.start_main_~a~2) (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)))" "2863#(and (<= (+ (* 19 ULTIMATE.start_main_~a~2) 1) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (<= 0 oldRank0))" },
+	initialStates = {"2852#unseeded" },
+	finalStates = {"2863#(and (<= (+ (* 19 ULTIMATE.start_main_~a~2) 1) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (<= 0 oldRank0))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("2852#unseeded" "assume !(main_~b~2 >= 10 && main_~b~2 <= 12);main_~a~2 := main_~a~2 + 1;" "2852#unseeded")
+		 ("2852#unseeded" "assume !(main_~b~2 >= 10 && main_~b~2 <= 12);main_~a~2 := main_~a~2 + 1;" "2863#(and (<= (+ (* 19 ULTIMATE.start_main_~a~2) 1) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (<= 0 oldRank0))")
+		 ("2852#unseeded" "assume true;" "2852#unseeded")
+		 ("2852#unseeded" "assume true;assume !!(main_~a~2 < 30);" "2852#unseeded")
+		 ("2852#unseeded" "assume !!(main_~b~2 < main_~a~2);" "2852#unseeded")
+		 ("2852#unseeded" "assume !(main_~b~2 > 5);main_~b~2 := main_~b~2 + 2;" "2852#unseeded")
+		 ("2852#unseeded" "main_~a~2 := main_~a~2 + 2;main_~b~2 := main_~b~2 - 10;" "2852#unseeded")
+		 ("2852#unseeded" "assume !(main_~b~2 < main_~a~2);" "2852#unseeded")
+		 ("2852#unseeded" "assume true;" "2852#unseeded")
+		 ("2852#unseeded" "assume main_~b~2 >= 10 && main_~b~2 <= 12;main_~a~2 := main_~a~2 + 10;" "2852#unseeded")
+		 ("2852#unseeded" "assume main_~b~2 > 5;main_~b~2 := main_~b~2 + 7;" "2852#unseeded")
+		 ("2852#unseeded" "havoc main_#res;havoc main_#t~nondet0, main_#t~nondet1, main_~a~2, main_~b~2;main_~a~2 := main_#t~nondet0;havoc main_#t~nondet0;main_~b~2 := main_#t~nondet1;havoc main_#t~nondet1;" "2852#unseeded")
+		 ("2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))" "assume !!(main_~b~2 < main_~a~2);" "2891#(and (<= (+ ULTIMATE.start_main_~b~2 1) ULTIMATE.start_main_~a~2) (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)))")
+		 ("2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))" "assume !(main_~b~2 < main_~a~2);" "2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))")
+		 ("2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))" "assume true;" "2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))")
+		 ("2907#(and (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (exists ((v_ULTIMATE.start_main_~b~2_90 Int)) (and (<= (+ v_ULTIMATE.start_main_~b~2_90 7) ULTIMATE.start_main_~b~2) (<= 6 v_ULTIMATE.start_main_~b~2_90) (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 v_ULTIMATE.start_main_~b~2_90) oldRank0)) (<= (+ v_ULTIMATE.start_main_~b~2_90 1) ULTIMATE.start_main_~a~2))))" "assume !(main_~b~2 >= 10 && main_~b~2 <= 12);main_~a~2 := main_~a~2 + 1;" "2863#(and (<= (+ (* 19 ULTIMATE.start_main_~a~2) 1) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (<= 0 oldRank0))")
+		 ("2891#(and (<= (+ ULTIMATE.start_main_~b~2 1) ULTIMATE.start_main_~a~2) (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)))" "assume !(main_~b~2 > 5);main_~b~2 := main_~b~2 + 2;" "2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))")
+		 ("2891#(and (<= (+ ULTIMATE.start_main_~b~2 1) ULTIMATE.start_main_~a~2) (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)))" "assume main_~b~2 > 5;main_~b~2 := main_~b~2 + 7;" "2907#(and (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (exists ((v_ULTIMATE.start_main_~b~2_90 Int)) (and (<= (+ v_ULTIMATE.start_main_~b~2_90 7) ULTIMATE.start_main_~b~2) (<= 6 v_ULTIMATE.start_main_~b~2_90) (<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 v_ULTIMATE.start_main_~b~2_90) oldRank0)) (<= (+ v_ULTIMATE.start_main_~b~2_90 1) ULTIMATE.start_main_~a~2))))")
+		 ("2863#(and (<= (+ (* 19 ULTIMATE.start_main_~a~2) 1) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0)) (<= 0 oldRank0))" "assume true;" "2864#(<= (* 19 ULTIMATE.start_main_~a~2) (+ (* 15 ULTIMATE.start_main_~b~2) oldRank0))")
+	},
+	returnTransitions = {
+	}
+);

@@ -1,0 +1,27 @@
+// Testfile dumped by Ultimate at 2015/10/05 03:43:24
+//
+// RefinementSetting [m_InterpolantAutomaton=ScroogeNondeterminism, m_BouncerStem=true, m_BouncerLoop=false, m_ScroogeNondeterminismStem=true, m_ScroogeNondeterminismLoop=false, m_CannibalizeLoop=false, m_UsedDefinedMaxRank=-3]
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {},
+	internalAlphabet = {"main_#res := 0;#t~ret3 := main_#res;assume true;" "havoc main_#res;havoc main_#t~nondet0, main_#t~post1, main_#t~post2, main_~N~2, main_~j~2, main_~i~2;main_~N~2 := main_#t~nondet0;havoc main_#t~nondet0;havoc main_~j~2;main_~i~2 := main_~N~2;" "assume !true;" "assume true;assume !!(main_~j~2 > 0);main_#t~post1 := main_~j~2;main_~j~2 := main_#t~post1 - 1;havoc main_#t~post1;" "assume true;assume !!(main_~i~2 > 0);main_~j~2 := main_~N~2;" "assume !true;" "assume true;assume !(main_~j~2 > 0);" "assume true;assume !(main_~i~2 > 0);" "main_#t~post2 := main_~i~2;main_~i~2 := main_#t~post2 - 1;havoc main_#t~post2;" },
+	returnAlphabet = {},
+	states = {"342#unseeded" "347#(<= ULTIMATE.start_main_~j~2 oldRank0)" "346#(and (<= (+ ULTIMATE.start_main_~j~2 1) oldRank0) (<= 0 oldRank0))" },
+	initialStates = {"342#unseeded" },
+	finalStates = {"346#(and (<= (+ ULTIMATE.start_main_~j~2 1) oldRank0) (<= 0 oldRank0))" },
+	callTransitions = {
+	},
+	internalTransitions = {
+		 ("342#unseeded" "havoc main_#res;havoc main_#t~nondet0, main_#t~post1, main_#t~post2, main_~N~2, main_~j~2, main_~i~2;main_~N~2 := main_#t~nondet0;havoc main_#t~nondet0;havoc main_~j~2;main_~i~2 := main_~N~2;" "342#unseeded")
+		 ("342#unseeded" "assume true;assume !!(main_~j~2 > 0);main_#t~post1 := main_~j~2;main_~j~2 := main_#t~post1 - 1;havoc main_#t~post1;" "342#unseeded")
+		 ("342#unseeded" "assume true;assume !!(main_~i~2 > 0);main_~j~2 := main_~N~2;" "342#unseeded")
+		 ("342#unseeded" "assume true;assume !!(main_~i~2 > 0);main_~j~2 := main_~N~2;" "346#(and (<= (+ ULTIMATE.start_main_~j~2 1) oldRank0) (<= 0 oldRank0))")
+		 ("342#unseeded" "assume true;assume !(main_~j~2 > 0);" "342#unseeded")
+		 ("342#unseeded" "main_#t~post2 := main_~i~2;main_~i~2 := main_#t~post2 - 1;havoc main_#t~post2;" "342#unseeded")
+		 ("347#(<= ULTIMATE.start_main_~j~2 oldRank0)" "main_#t~post2 := main_~i~2;main_~i~2 := main_#t~post2 - 1;havoc main_#t~post2;" "347#(<= ULTIMATE.start_main_~j~2 oldRank0)")
+		 ("346#(and (<= (+ ULTIMATE.start_main_~j~2 1) oldRank0) (<= 0 oldRank0))" "assume true;assume !!(main_~j~2 > 0);main_#t~post1 := main_~j~2;main_~j~2 := main_#t~post1 - 1;havoc main_#t~post1;" "346#(and (<= (+ ULTIMATE.start_main_~j~2 1) oldRank0) (<= 0 oldRank0))")
+		 ("346#(and (<= (+ ULTIMATE.start_main_~j~2 1) oldRank0) (<= 0 oldRank0))" "assume true;assume !(main_~j~2 > 0);" "347#(<= ULTIMATE.start_main_~j~2 oldRank0)")
+	},
+	returnTransitions = {
+	}
+);
