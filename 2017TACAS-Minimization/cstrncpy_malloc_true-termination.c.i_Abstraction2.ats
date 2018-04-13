@@ -1,0 +1,78 @@
+// Testfile dumped by Ultimate at 2017/03/03 10:33:59
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {c0 c1 c2 },
+	internalAlphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 a33 a34 a35 },
+	returnAlphabet = {r0 r1 r2 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 s35 s36 s37 s38 s39 s40 s41 s42 s43 s44 s45 s46 s47 s48 s49 s50 s51 s52 s53 s54 s55 },
+	initialStates = {s14 },
+	finalStates = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 s35 s36 s37 s38 s40 s42 s44 s45 s47 s48 s50 s51 s52 s53 s54 s55 },
+	callTransitions = {
+		(s14 c0 s15)
+		(s18 c1 s19)
+		(s33 c2 s35)
+		(s34 c2 s36)
+	},
+	internalTransitions = {
+		(s0 a15 s2)
+		(s1 a15 s3)
+		(s2 a16 s4)
+		(s3 a16 s5)
+		(s4 a11 s6)
+		(s5 a11 s7)
+		(s6 a12 s8)
+		(s7 a12 s9)
+		(s8 a14 s10)
+		(s9 a14 s11)
+		(s10 a15 s12)
+		(s11 a15 s13)
+		(s12 a16 s50)
+		(s13 a16 s51)
+		(s15 a22 s16)
+		(s16 a23 s17)
+		(s19 a25 s20)
+		(s20 a27 s21)
+		(s20 a26 s22)
+		(s21 a28 s23)
+		(s21 a29 s23)
+		(s22 a28 s24)
+		(s22 a29 s24)
+		(s23 a30 s25)
+		(s24 a30 s26)
+		(s25 a31 s27)
+		(s26 a31 s28)
+		(s27 a32 s29)
+		(s28 a32 s30)
+		(s29 a33 s31)
+		(s30 a33 s32)
+		(s31 a34 s33)
+		(s32 a34 s34)
+		(s35 a1 s37)
+		(s36 a1 s38)
+		(s37 a5 s39)
+		(s38 a5 s40)
+		(s39 a7 s41)
+		(s40 a7 s42)
+		(s41 a8 s43)
+		(s41 a8 s44)
+		(s42 a8 s45)
+		(s43 a9 s46)
+		(s44 a9 s47)
+		(s45 a9 s48)
+		(s46 a18 s49)
+		(s47 a10 s50)
+		(s48 a10 s51)
+		(s49 a5 s39)
+		(s50 a11 s52)
+		(s51 a11 s53)
+		(s52 a12 s54)
+		(s53 a12 s55)
+		(s54 a14 s0)
+		(s55 a14 s1)
+	},
+	returnTransitions = {
+		(s17 s14 r0 s18)
+	}
+);

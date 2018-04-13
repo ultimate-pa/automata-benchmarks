@@ -1,0 +1,7 @@
+This folder contains nested word automata that were produced from the automaton-based termination analysis tool Buchi Automizer.
+The automata were used for the benchmarks in [1].
+
+[1]
+M. Heizmann, C. Schilling, D. Tischner
+Minimization of visibly pushdown automata using partial Max-SAT
+TACAS 2017

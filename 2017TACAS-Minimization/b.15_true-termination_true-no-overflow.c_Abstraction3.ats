@@ -1,0 +1,46 @@
+// Testfile dumped by Ultimate at 2017/03/03 13:41:15
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {c0 c1 },
+	internalAlphabet = {a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 },
+	returnAlphabet = {r0 r1 },
+	states = {s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 },
+	initialStates = {s4 },
+	finalStates = {s0 s1 s2 s4 s5 s9 s10 s12 s13 s14 s15 s17 s18 s19 s20 },
+	callTransitions = {
+		(s4 c0 s9)
+		(s18 c1 s20)
+	},
+	internalTransitions = {
+		(s0 a9 s19)
+		(s1 a9 s19)
+		(s2 a9 s19)
+		(s3 a9 s16)
+		(s5 a9 s17)
+		(s6 a6 s7)
+		(s7 a7 s8)
+		(s8 a9 s11)
+		(s8 a9 s13)
+		(s9 a1 s15)
+		(s10 a4 s6)
+		(s11 a7 s3)
+		(s11 a7 s5)
+		(s12 a9 s19)
+		(s13 a7 s12)
+		(s13 a7 s14)
+		(s14 a9 s17)
+		(s16 a7 s21)
+		(s16 a7 s0)
+		(s17 a7 s12)
+		(s17 a7 s14)
+		(s19 a7 s1)
+		(s19 a7 s2)
+		(s20 a3 s10)
+		(s21 a9 s16)
+	},
+	returnTransitions = {
+		(s15 s4 r0 s18)
+	}
+);
