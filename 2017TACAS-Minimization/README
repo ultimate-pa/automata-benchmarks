@@ -5,3 +5,43 @@ The automata were used for the benchmarks in [1].
 M. Heizmann, C. Schilling, D. Tischner
 Minimization of visibly pushdown automata using partial Max-SAT
 TACAS 2017
+
+---
+
+The following is a short manual how to create PMaxSAT benchmark files.
+
+- In class `DimacsMaxSatSolver` set `ONLY_PRODUCE_OUTPUT_FILE` to `true`.
+
+- Add the following lines to each benchmark file, where FILENAME is the file name without extension:
+
+```
+NestedWordAutomaton nwa2 = removeDeadEnds(nwa);
+minimizeNwaPmaxSatDimacs(nwa2, "FILENAME");
+```
+
+For adding these lines one can use the following bash script:
+
+```bash
+#!/bin/bash
+
+NEWFILE=temp.ats
+for f in *.ats
+do
+    echo "processing $f"
+    f_without_ats=${f%\.ats*}
+    cat > "$NEWFILE" <<EOL
+NestedWordAutomaton nwa2 = removeDeadEnds(nwa);
+minimizeNwaPmaxSatDimacs(nwa2, "$f_without_ats");
+EOL
+    cat "$f" | tail -n +4 >> "$NEWFILE"
+    mv "$NEWFILE" "$f"
+done
+```
+
+- Modify the `AutomataMinimizationTestSuite`:
+ - `SETTINGS`: "AutomataScript/default.epf"
+ - `mDirectories`: (use folder of benchmark files)
+  - NOTE: Only use automata up to 10 KB, as they already result in formulas with >10 MB.
+
+- Run the `AutomataMinimizationTestSuite`.
+ - The automata are output to Ultimate's surefire report folder.
